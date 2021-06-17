@@ -20,10 +20,8 @@ namespace Bamsunbic.Library.Extensions
             {
                 return $"{businessNumber.Substring(0, 3)}-{businessNumber.Substring(3, 2)}-{ businessNumber.Substring(5, 5)}";
             }
-            else
-            {
-                return businessNumber;
-            }
+            
+            return businessNumber;
         }
 
         /// <summary>
@@ -50,10 +48,8 @@ namespace Bamsunbic.Library.Extensions
             {
                 return $"{phoneNumber.Substring(0, 3)}-{phoneNumber.Substring(3, 4)}-{ phoneNumber.Substring(7, 4)}";
             }
-            else
-            {
-                return phoneNumber;
-            }
+           
+             return phoneNumber;
         }
 
         /// <summary>
@@ -62,14 +58,11 @@ namespace Bamsunbic.Library.Extensions
         public static string[] SplitBusinessNumber(this string businessNumber)
         {
             var businessNumberSplit = new string[3];
-            if (businessNumber != null)
+            if (businessNumber.Length == 10)
             {
-                if (businessNumber.Length == 10)
-                {
-                    businessNumberSplit[0] = businessNumber.Substring(0, 3);
-                    businessNumberSplit[1] = businessNumber.Substring(3, 2);
-                    businessNumberSplit[2] = businessNumber.Substring(5, 5);
-                }
+                businessNumberSplit[0] = businessNumber.Substring(0, 3);
+                businessNumberSplit[1] = businessNumber.Substring(3, 2);
+                businessNumberSplit[2] = businessNumber.Substring(5, 5);
             }
 
             return businessNumberSplit;
@@ -81,46 +74,35 @@ namespace Bamsunbic.Library.Extensions
         public static string[] SplitPhoneNumber(this string phoneNumber)
         {
             var phoneNumberSplit = new string[3];
-            if (phoneNumber != null)
+            if (phoneNumber.Length == 9)
             {
-                if (phoneNumber.Length == 9)
+                phoneNumberSplit[0] = phoneNumber.Substring(0, 2);
+                phoneNumberSplit[1] = phoneNumber.Substring(2, 3);
+                phoneNumberSplit[2] = phoneNumber.Substring(5, 4);
+            }
+            else if (phoneNumber.Length == 10)
+            {
+                if (phoneNumber.Substring(0, 2) == "02")
                 {
                     phoneNumberSplit[0] = phoneNumber.Substring(0, 2);
-                    phoneNumberSplit[1] = phoneNumber.Substring(2, 3);
-                    phoneNumberSplit[2] = phoneNumber.Substring(5, 4);
-                }
-                else if (phoneNumber.Length == 10)
-                {
-                    if (phoneNumber.Substring(0, 2) == "02")
-                    {
-                        phoneNumberSplit[0] = phoneNumber.Substring(0, 2);
-                        phoneNumberSplit[1] = phoneNumber.Substring(2, 4);
-                        phoneNumberSplit[2] = phoneNumber.Substring(6, 4);
-                    }
-                    else
-                    {
-                        phoneNumberSplit[0] = phoneNumber.Substring(0, 3);
-                        phoneNumberSplit[1] = phoneNumber.Substring(3, 3);
-                        phoneNumberSplit[2] = phoneNumber.Substring(6, 4);
-                    }
-                }
-                else if (phoneNumber.Length == 11)
-                {
-                    phoneNumberSplit[0] = phoneNumber.Substring(0, 3);
-                    phoneNumberSplit[1] = phoneNumber.Substring(3, 4);
-                    phoneNumberSplit[2] = phoneNumber.Substring(7, 4);
+                    phoneNumberSplit[1] = phoneNumber.Substring(2, 4);
+                    phoneNumberSplit[2] = phoneNumber.Substring(6, 4);
                 }
                 else
                 {
-                    phoneNumberSplit[0] = "";
-                    phoneNumberSplit[1] = "";
-                    phoneNumberSplit[2] = "";
+                    phoneNumberSplit[0] = phoneNumber.Substring(0, 3);
+                    phoneNumberSplit[1] = phoneNumber.Substring(3, 3);
+                    phoneNumberSplit[2] = phoneNumber.Substring(6, 4);
                 }
             }
-
+            else if (phoneNumber.Length == 11)
+            {
+                phoneNumberSplit[0] = phoneNumber.Substring(0, 3);
+                phoneNumberSplit[1] = phoneNumber.Substring(3, 4);
+                phoneNumberSplit[2] = phoneNumber.Substring(7, 4);
+            }
+              
             return phoneNumberSplit;
         }
-
-        
     }
 }

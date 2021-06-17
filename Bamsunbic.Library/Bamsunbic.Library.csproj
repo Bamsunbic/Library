@@ -4,6 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <Authors>Bamsunbic</Authors>
     <SignAssembly>false</SignAssembly>
+    <Description>Made in Sangwon Lee</Description>
   </PropertyGroup>
 
 </Project>
