@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Authors>Bamsunbic</Authors>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+
+</Project>
