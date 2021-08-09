@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Bamsunbic.Library.Commons
 {
     /// <summary>
-    /// 전화번호 클래스
+    /// 전화번호 정적 클래스
     /// </summary>
 	public static class PhoneNumber
 	{
