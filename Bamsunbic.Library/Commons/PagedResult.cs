@@ -18,20 +18,41 @@ namespace Bamsunbic.Library.Commons
 
     public abstract class PagedResultBase
     {
+        /// <summary>
+        /// 현재 페이지 번호
+        /// </summary>
         public int CurrentPage { get; set; }
+
         public int PageCount { get; set; }
+
+        /// <summary>
+        /// 한 페이지당 보여질 게시글의 개수
+        /// </summary>
         public int PageSize { get; set; }
+
+        /// <summary>
+        /// 총 개수
+        /// </summary>
         public int RowCount { get; set; }
 
-        public int FirstRowOnPage
-        {
+        /// <summary>
+        /// 현재 페이지가 첫번째 페이지인지 유무 판단
+        /// </summary>
+        public bool IsShowPrevious => CurrentPage > 1;
 
-            get { return (CurrentPage - 1) * PageSize + 1; }
-        }
+        /// <summary>
+        /// 현재 페이지가 마지막 페이지인지 유무 판단
+        /// </summary>
+        public bool IsShowLast => CurrentPage != RowCount;
 
-        public int LastRowOnPage
-        {
-            get { return Math.Min(CurrentPage * PageSize, RowCount); }
-        }
+        /// <summary>
+        /// 현재 페이지가 총 페이지 수보다 적으면 다음 버튼 노출
+        /// </summary>
+        public bool IsShowNext => CurrentPage < RowCount;
+
+        /// <summary>
+        /// 현재 페이지가 첫번째 페이지가 아니면 처음 버튼 노출
+        /// </summary>
+        public bool IsShowFirst => CurrentPage != 1;
     }
 }
