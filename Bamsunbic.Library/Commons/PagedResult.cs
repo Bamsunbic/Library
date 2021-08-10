@@ -33,6 +33,9 @@ namespace Bamsunbic.Library.Commons
         /// </summary>
         public int EndPage { get; set; }
 
+        /// <summary>
+        /// 총 페이지 개수
+        /// </summary>
         public int PageCount { get; set; }
 
         /// <summary>
@@ -41,7 +44,7 @@ namespace Bamsunbic.Library.Commons
         public int PageSize { get; set; }
 
         /// <summary>
-        /// 총 개수
+        /// 총 행 개수
         /// </summary>
         public int RowCount { get; set; }
 
@@ -53,12 +56,12 @@ namespace Bamsunbic.Library.Commons
         /// <summary>
         /// 현재 페이지가 마지막 페이지인지 유무 판단
         /// </summary>
-        public bool IsShowLast => CurrentPage != RowCount;
+        public bool IsShowLast => CurrentPage != PageCount;
 
         /// <summary>
         /// 현재 페이지가 총 페이지 수보다 적으면 다음 버튼 노출
         /// </summary>
-        public bool IsShowNext => CurrentPage < RowCount;
+        public bool IsShowNext => CurrentPage < PageCount;
 
         /// <summary>
         /// 현재 페이지가 첫번째 페이지가 아니면 처음 버튼 노출
