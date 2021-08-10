@@ -23,6 +23,16 @@ namespace Bamsunbic.Library.Commons
         /// </summary>
         public int CurrentPage { get; set; }
 
+        /// <summary>
+        /// 시작 페이지 번호
+        /// </summary>
+        public int StartPage { get; set; }
+
+        /// <summary>
+        /// 마지막 페이지 번호
+        /// </summary>
+        public int EndPage { get; set; }
+
         public int PageCount { get; set; }
 
         /// <summary>

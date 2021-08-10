@@ -9,4 +9,3 @@ D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\obj\Release\net5.0\Bamsunbic.Li
 D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\obj\Release\net5.0\Bamsunbic.Library.dll
 D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\obj\Release\net5.0\ref\Bamsunbic.Library.dll
 D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\obj\Release\net5.0\Bamsunbic.Library.pdb
-D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\obj\Release\net5.0\Bamsunbic.Library.csproj.AssemblyReference.cache

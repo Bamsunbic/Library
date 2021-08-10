@@ -14,10 +14,17 @@ namespace Bamsunbic.Library.Extensions
 	{
         public static PagedResult<T> GetPaged<T>(this IQueryable<T> query, int page, int pageSize) where T : class
         {
-            var result = new PagedResult<T>();
-            result.CurrentPage = page;
-            result.PageSize = pageSize;
-            result.RowCount = query.Count();
+            var endPage = (int)(Math.Ceiling(decimal.Divide(page, pageSize)) * pageSize);
+            var startPage = (endPage - pageSize) + 1;
+
+            var result = new PagedResult<T>
+            {
+                CurrentPage = page,
+                PageSize = pageSize,
+                RowCount = query.Count(),
+                StartPage = startPage,
+                EndPage = endPage
+            };
 
             var pageCount = (double)result.RowCount / pageSize;
             result.PageCount = (int)Math.Ceiling(pageCount);
