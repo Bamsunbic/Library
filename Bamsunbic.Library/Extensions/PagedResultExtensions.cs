@@ -1,4 +1,5 @@
 ﻿using Bamsunbic.Library.Commons;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,32 @@ namespace Bamsunbic.Library.Extensions
 
             var skip = (page - 1) * pageSize;
             result.Results = query.Skip(skip).Take(pageSize).ToList();
+
+            return result;
+        }
+
+        public static async Task<PagedResult<T>> GetPagedAsync<T>(this IQueryable<T> query, int page, int pageSize) where T : class
+        {
+            var result = new PagedResult<T>();
+            result.CurrentPage = page;
+            result.PageSize = pageSize;
+            result.RowCount = query.Count();
+
+            var endPage = (int)(Math.Ceiling(decimal.Divide(page, pageSize)) * pageSize);
+            var startPage = (endPage - pageSize) + 1;
+            result.StartPage = startPage;
+            result.EndPage = endPage;
+
+            var pageCount = (int)Math.Ceiling(decimal.Divide(query.Count(), pageSize));
+            result.PageCount = pageCount;
+
+            if (endPage > pageCount)
+            {
+                result.EndPage = pageCount;
+            }
+
+            var skip = (page - 1) * pageSize;
+            result.Results = await query.Skip(skip).Take(pageSize).ToListAsync();
 
             return result;
         }
