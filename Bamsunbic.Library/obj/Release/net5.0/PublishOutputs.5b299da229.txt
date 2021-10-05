@@ -1,3 +1,14 @@
 D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Bamsunbic.Library.dll
 D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Bamsunbic.Library.deps.json
 D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Bamsunbic.Library.pdb
+D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Microsoft.EntityFrameworkCore.dll
+D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Microsoft.Extensions.Caching.Memory.dll
+D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Microsoft.Extensions.DependencyInjection.dll
+D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Microsoft.Extensions.Logging.dll
+D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Microsoft.Extensions.Options.dll
+D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\Microsoft.Extensions.Primitives.dll
+D:\Workplace\Bamsunbic.Library\Bamsunbic.Library\bin\Release\net5.0\publish\System.Diagnostics.DiagnosticSource.dll

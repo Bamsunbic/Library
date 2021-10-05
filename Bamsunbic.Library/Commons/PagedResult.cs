@@ -49,6 +49,11 @@ namespace Bamsunbic.Library.Commons
         public int RowCount { get; set; }
 
         /// <summary>
+        /// 행 번호
+        /// </summary>
+        public int RowNumber { get; set; }
+
+        /// <summary>
         /// 현재 페이지가 첫번째 페이지인지 유무 판단
         /// </summary>
         public bool IsShowPrevious => CurrentPage > 1;
