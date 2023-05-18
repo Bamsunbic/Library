@@ -1,22 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bamsunbic.Library.Commons
+﻿namespace Bamsunbic.Library.Models.Paged
 {
-    public class PagedResult<T> : PagedResultBase where T : class
-    {
-        public PagedResult()
-        {
-            Results = new List<T>();
-        }
-
-        public IList<T> Results { get; set; }
-    }
-
-    public abstract class PagedResultBase
+    public class PagedOption
     {
         /// <summary>
         /// 현재 페이지 번호
@@ -54,23 +38,24 @@ namespace Bamsunbic.Library.Commons
         public int RowNumber { get; set; }
 
         /// <summary>
-        /// 현재 페이지가 첫번째 페이지인지 유무 판단
+        /// 이전 버튼 활성화 유무
         /// </summary>
-        public bool IsShowPrevious => CurrentPage > 1;
-
+        public bool IsShowPrevious => (CurrentPage > 1) && (CurrentPage < PageCount);
+        
         /// <summary>
-        /// 현재 페이지가 마지막 페이지인지 유무 판단
-        /// </summary>
-        public bool IsShowLast => CurrentPage != PageCount;
-
-        /// <summary>
-        /// 현재 페이지가 총 페이지 수보다 적으면 다음 버튼 노출
+        /// 다음 버튼 활성화 유무
         /// </summary>
         public bool IsShowNext => CurrentPage < PageCount;
 
         /// <summary>
-        /// 현재 페이지가 첫번째 페이지가 아니면 처음 버튼 노출
+        /// 처음 버튼 활성화 유무
         /// </summary>
-        public bool IsShowFirst => CurrentPage != 1;
+        public bool IsShowFirst => (CurrentPage > 1) && (CurrentPage < PageCount);
+        
+        /// <summary>
+        /// 마지막 버튼 활성화 유무
+        /// </summary>
+        public bool IsShowLast => CurrentPage < PageCount && (CurrentPage < PageCount);
+
     }
 }

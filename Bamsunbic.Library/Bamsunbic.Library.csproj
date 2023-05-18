@@ -1,10 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <Authors>Bamsunbic</Authors>
     <SignAssembly>false</SignAssembly>
     <Description>Made in Sangwon Lee</Description>
+    <LangVersion>11</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
