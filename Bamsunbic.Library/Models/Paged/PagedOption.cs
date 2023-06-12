@@ -40,7 +40,7 @@
         /// <summary>
         /// 이전 버튼 활성화 유무
         /// </summary>
-        public bool IsShowPrevious => (CurrentPage > 1) && (CurrentPage < PageCount);
+        public bool IsShowPrevious => CurrentPage > 1;
         
         /// <summary>
         /// 다음 버튼 활성화 유무
@@ -50,12 +50,12 @@
         /// <summary>
         /// 처음 버튼 활성화 유무
         /// </summary>
-        public bool IsShowFirst => (CurrentPage > 1) && (CurrentPage < PageCount);
+        public bool IsShowFirst => CurrentPage > 1;
         
         /// <summary>
         /// 마지막 버튼 활성화 유무
         /// </summary>
-        public bool IsShowLast => CurrentPage < PageCount && (CurrentPage < PageCount);
+        public bool IsShowLast => CurrentPage < PageCount;
 
     }
 }

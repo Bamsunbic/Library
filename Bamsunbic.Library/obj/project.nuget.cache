@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7vJPKifJosnubFVQayzkHrtIDnAcGjDbtcQPcABukf4giKRVHzxjfGsfg1MM8cWhFz6bmN8mcxfMRpa6xsL6xw==",
+  "dgSpecHash": "lpfjZqTHrZu0q5ycj5qPhVKeJ4GoRkVilhmg8a9hv4kEexeCHMCCWnhZ9mvyZVIqYVeHGiV6pGBv6JhW9t846Q==",
   "success": true,
-  "projectFilePath": "D:\\Workplace\\Library\\Bamsunbic.Library\\Bamsunbic.Library.csproj",
+  "projectFilePath": "D:\\Workplace\\C#\\Library\\Bamsunbic.Library\\Bamsunbic.Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\myjet\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.9\\microsoft.entityframeworkcore.5.0.9.nupkg.sha512",
     "C:\\Users\\myjet\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.9\\microsoft.entityframeworkcore.abstractions.5.0.9.nupkg.sha512",

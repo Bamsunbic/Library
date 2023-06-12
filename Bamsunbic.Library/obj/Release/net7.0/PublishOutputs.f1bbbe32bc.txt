@@ -1,0 +1,13 @@
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Bamsunbic.Library.dll
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Bamsunbic.Library.deps.json
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Bamsunbic.Library.pdb
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Microsoft.EntityFrameworkCore.dll
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Microsoft.Extensions.Caching.Memory.dll
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Microsoft.Extensions.DependencyInjection.dll
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Microsoft.Extensions.Logging.dll
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Microsoft.Extensions.Options.dll
+D:\Workplace\C#\Library\Bamsunbic.Library\bin\Release\net7.0\publish\Microsoft.Extensions.Primitives.dll
